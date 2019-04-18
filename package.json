@@ -2,12 +2,12 @@
   "name": "game-of-life",
   "version": "1.0.0",
   "description": "game of life implementation for the browser, based on typescript",
-  "main": "dist/js/bundle.js",
+  "main": "docs/js/bundle.js",
   "scripts": {
     "pretest": "tsc --target es5 --outDir ./.tmp test/index.ts",
     "test": "npm run pretest && jasmine ./.tmp/test/index.js",
     "build": "rollup -c",
-    "web": "http-server ./dist -o --cors"
+    "web": "http-server ./docs -o --cors"
   },
   "repository": {
     "type": "git",

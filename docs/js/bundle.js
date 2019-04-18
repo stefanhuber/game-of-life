@@ -57,7 +57,7 @@
         }
         return count;
     }
-    function countLivingNeighboursDimensional(board, row, column) {
+    function countLivingNeighboursSpherical(board, row, column) {
         var count = 0;
         for (var r = row - 1; r <= row + 1; r++) {
             for (var c = column - 1; c <= column + 1; c++) {
@@ -148,7 +148,7 @@
                 return countLivingNeighbours(this._board, row, column);
             }
             else {
-                return countLivingNeighboursDimensional(this._board, row, column);
+                return countLivingNeighboursSpherical(this._board, row, column);
             }
         };
         Model.prototype.transform = function () {
