@@ -1,0 +1,35 @@
+body, html {
+    margin:0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size:14px;
+}
+
+main {
+    width: 922px;
+    margin:0 auto;
+}
+
+main canvas {
+    margin:20px 0;
+}
+
+#game-settings {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#game-settings > section {
+    flex: 1 0 30%;
+    background:#eee;
+    padding:10px;
+    margin:5px;
+}
+
+section h2 {
+    padding:0 0 5px 0;
+    margin:0;
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Conway's Game of Life - Typescript/Canvas implementation</title>        
+    </head>
+    <body>        
+        <main>
+            <h1>Conway's Game of Life</h1>
+
+            <canvas></canvas>
+
+            <section id="game-settings">
+                <section>
+                    <h2>Game stats</h2>
+                    <div>Generation: <span id="output-generation"></span> | Living cells: <span id="output-living-cells"></span></div>
+                </section>
+                <section>
+                    <h2>Game controls</h2>
+                    <div>
+                        <button id="play-button">Play</button>
+                        <button id="step-button">Step</button>
+                        <button id="clear-button">Clear</button>                
+                    </div>
+                </section>
+                <section>
+                    <h2>Start Pattern</h2>
+                    <div>
+                        <select id="probability-select">
+                            <option value="1">10% Living</option>
+                            <option value="2">20% Living</option>
+                            <option selected value="3">30% Living</option>
+                            <option value="4">40% Living</option>
+                            <option value="5">50% Living</option>
+                            <option value="6">60% Living</option>
+                            <option value="7">70% Living</option>
+                            <option value="8">80% Living</option>
+                            <option value="9">90% Living</option>
+                        </select> <button id="randomize-button">Randomize</button>
+                    </div>
+                </section>
+                <section>
+                    <h2>Color Scheme</h2>
+                    <div>
+                        <select id="color-scheme-select">
+                            <option value="red">Red scheme</option>
+                            <option value="green">Green scheme</option>
+                            <option value="blue">Blue scheme</option>
+                            <option value="yellow">Yellow scheme</option>
+                            <option value="cyan">Cyan scheme</option>
+                            <option value="magenta">Magenta scheme</option>
+                        </select>
+                    </div>
+                </section>
+                <section>
+                    <h2>Game Speed</h2>
+                    <div>
+                        <select id="fps-select">
+                            <option value="1">1 frames per second</option>
+                            <option value="2">2 frames per second</option>
+                            <option value="5">5 frames per second</option>
+                            <option value="10" selected>10 frames per second</option>
+                            <option value="20">20 frames per second</option>
+                            <option value="30">30 frames per second</option>
+                        </select>
+                    </div>
+                </section>
+                <section>
+                        <h2>Calculate Neighbours Method</h2>
+                        <div>
+                            <select id="neighbours-select">
+                                <option selected value="normal">Normal</option>
+                                <option value="dimensional">Dimensional</option>
+                            </select>
+                        </div>
+                    </section>
+            </section>
+
+            <!--h3>Information</h3>
+            <div>                
+            </div-->
+        </main>
+    </body>
+    <script src="./js/bundle.js"></script>
+</html>
