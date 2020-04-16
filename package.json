@@ -1,6 +1,6 @@
 {
   "name": "game-of-life",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "game of life implementation for the browser, based on typescript",
   "main": "docs/js/bundle.js",
   "scripts": {
@@ -24,13 +24,13 @@
   },
   "homepage": "https://github.com/stefanhuber/game-of-life#readme",
   "devDependencies": {
-    "@types/jasmine": "^3.3.12",
-    "http-server": "^0.11.1",
-    "jasmine": "^3.4.0",
-    "rollup": "^1.10.0",
-    "rollup-plugin-copy": "^1.1.0",
-    "rollup-plugin-typescript": "^1.0.1",
-    "tslib": "^1.9.3",
-    "typescript": "^3.4.3"
+    "@rollup/plugin-typescript": "^4.1.1",
+    "@types/jasmine": "^3.5.10",
+    "http-server": "^0.12.1",
+    "jasmine": "^3.5.0",
+    "rollup": "^2.6.1",
+    "rollup-plugin-copy": "^3.3.0",
+    "tslib": "^1.11.1",
+    "typescript": "^3.8.3"
   }
 }

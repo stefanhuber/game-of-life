@@ -1,7 +1,7 @@
 (function (factory) {
     typeof define === 'function' && define.amd ? define(factory) :
     factory();
-}(function () { 'use strict';
+}((function () { 'use strict';
 
     var View = /** @class */ (function () {
         function View(rows, columns, cellSize) {
@@ -406,5 +406,5 @@
     var controller = Controller.create();
     controller.init();
 
-}));
+})));
 //# sourceMappingURL=bundle.js.map

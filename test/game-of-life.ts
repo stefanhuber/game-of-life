@@ -13,10 +13,18 @@ describe('GameOfLife', () => {
         // ]
         
         gameOfLife
+            .modify(0, 0, 0)
             .modify(0, 1)
+            .modify(0, 2, 0)
+            .modify(0, 3, 0)
+            .modify(1, 0, 0)
             .modify(1, 1)
             .modify(1, 2)
+            .modify(1, 3, 0)
+            .modify(2, 0, 0)
             .modify(2, 1)
+            .modify(2, 2, 0)
+            .modify(2, 3, 0)
     });
 
     it('counting neighbours normally should be correct', () => {
@@ -34,9 +42,9 @@ describe('GameOfLife', () => {
 
     it('board should be correctly transformed', () => {
         expect(gameOfLife.transform()).toEqual([
-            [-1,1,1,-1],
-            [1,1,1,-1],
-            [-1,1,1,-1]
+            [1,1,0,0],
+            [1,1,1,0],
+            [1,1,0,0]
         ]);
     });
 });

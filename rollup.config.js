@@ -1,7 +1,7 @@
-const typescript = require('rollup-plugin-typescript');
-const copy = require('rollup-plugin-copy');
+import typescript from '@rollup/plugin-typescript';
+import copy from 'rollup-plugin-copy';
 
-module.exports = {
+export default {
     input: 'src/index.ts',
     output: {
       file: 'docs/js/bundle.js',
@@ -12,11 +12,10 @@ module.exports = {
     plugins: [
         typescript() ,
         copy({
-            targets: [
-                'src/www/index.html',
-                'src/www/style.css'
-            ],
-            outputFolder:'docs'
+            targets: [{
+                src: ['src/www/index.html', 'src/www/style.css'],
+                dest: 'docs'
+            }]
         })
     ]
 };
